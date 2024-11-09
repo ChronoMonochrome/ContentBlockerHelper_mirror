@@ -1,0 +1,52 @@
+Hilft Ihnen Werbung, Tracking oder irgendwelche Scripts und sonstige störende Inhalte auf einfache Weise zu blockieren. (Unterstützt auch Opera Mobile Labs.)
+
+= Features
+
+* Blockiert Werbeanzeigen durch die abonnierten Filter. ("Fanboy (Main)" ist standardmäßig aktiviert.)
+* Fügt Regeln hinzu, indem Sie Elemente anklicken, die Sie blockieren möchten.
+* Ermöglicht die URL des iframes oder Scripts hinzuzufügen, indem Sie auf Operas Standard-Contents-Blockmodus klicken.
+* Verstecken Sie lästige Elemente durch die CSS-Selector-Regeln.
+* Verbietet Scripts auf der Seite auszuführen. (standardmäßig deaktiviert)
+* Unterstützt das Importieren von "AdBlock Plus 1.1"-Listen. (Ebenfalls Teil von $third-party oder anderen)
+* Hilft Ihnen, zur Blockierungumgebung ohne Erweiterungen zu wechseln. (Exportiert CSS und Register zur parmanenten Liste)
+
+= Gebrauch
+
+== Blockierung von Werbung durch Abonnements
+
+Fanboy(Main) ist standardmäßig aktiviert. Wählen Sie Ihre gewünschten Abonnements in der Aboliste und klicken Sie auf "Abbonieren".
+
+== Import von AdBlock Plus 1.1
+
+Wenn Sie durch einen Klick auf "Eine Datei von AdBlock Plus 1.1 importieren" importieren, dann werden Filter und jene auf der temporären Liste oder der Registerkarte CSS-Regeln hinzugefügt, die jedoch noch nicht gespeichert werden. Gehen Sie zu jedem Reiter und speichern Sie.
+
+Wenn Sie die Importoptionen deaktivieren, werden die Filter strenger umgewandelt. Beachten Sie aber, dass die Verarbeitungslast dadurch erhöht wird.
+
+== Hinzufügen von Sperrregeln
+
+# Klicken Sie auf die UI-Knopf der Erweiterung "ContentBlockHelper".
+# Klicken Sie auf eine Schaltfläche entspechend der Art der Inhalte, die Sie blockieren möchten.
+# Klicken Sie auf ein Element, das Sie sperren möchten.
+# Wählen Sie eine Regel aus der Popup-Liste und klicken Sie darauf.
+# Klicken Sie auf die UI-Knopf der Erweiterung "ContentBlockHelper".
+# Klicken Sie auf die Schaltfläche "Alle Blockierregeln anwenden.".
+# Laden Sie die Seite neu, wenn die hinzugefügten Regeln nicht angewendet wurden.
+
+== Verbot von ausführenden Scripts
+
+Diese Funktion ist standardmäßig deaktiviert. Sie können es auf der Registerkarte "Verhalten" aktivieren.
+
+; Aus: Ermöglicht das Ausführen von Scripts.
+; Scripts Dritter: Skripte der inline, derselben Domain und der Sub-Domain werden ausgeführt.
+, Externe Scripts: Scripts der inline und derselben Domain werden ausgeführt.
+; Alle Scripts: Verbietet das Ausführen aller Scripts auf dieser Seite. Wenn Sie auf einer bestimmten Seite alle Scripts ausführen möchten, fügen Sie ein URL-Muster auf der Seite der "Liste der erlaubten Elemente" hinzu.
+
+Wenn Sie den Button "Ausführende SCRIPTs temporär erlauben." in der oberen rechten Ecke des Popups anklicken, wird die Seite mit der Ausführung aller Scripte neu geladen.
+
+== In der parmanenten Liste eintragen
+
+Sie können die temporären Regeln zu Opera Link auf der Seite "Einstellungen" eintragen. Eingetragene Regeln werden von den temporären Regeln entfernt.
+
+== Unterstützung von Opera Mobile Labs
+
+Wenn Sie "Verwende die permanente Liste für die URL Filter API der Opera-Erweiterung."-Option aktivieren,  müssen Sie zukünftig nicht mehr die urlfilter.ini bearbeiten. Sie sollten sich nur URL-Filter von Ihrem Opera-Link-Account holen.

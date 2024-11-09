@@ -1,0 +1,18 @@
+{
+	"Confirm::addBlockRule"        : "この遮断規則を追加しますか？",
+	"Confirm::removeBlockRule"     : "この遮断規則を削除しますか？",
+	"Confirm::addAllowRule"        : "この許可規則を追加しますか？",
+	"Confirm::removeAllowRule"     : "この許可規則を削除しますか？",
+	"Confirm::AddCSSRule"          : "この CSS 規則を追加しますか？",
+	"Confirm::RemoveCSSRule"       : "この CSS 規則を削除しますか？",
+
+	"ApplyButton::AddRule"         : "規則を追加",
+	"ApplyButton::AddAllowRule"    : "許可規則を追加",
+	"ApplyButton::RemoveBlockRule" : "遮断規則を削除",
+	"ApplyButton::RemoveAllowRule" : "許可規則を削除",
+	"ApplyButton::Disabled"        : "変更不可",
+	"ApplyButton::AddCSSRule"      : "CSS 規則を追加",
+	"ApplyButton::RemoveCSSRule"   : "CSS 規則を削除",
+
+	"eof":""
+}

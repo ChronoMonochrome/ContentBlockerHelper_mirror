@@ -1,0 +1,51 @@
+﻿Te ayudara a bloquear los anuncios, seguimientos, scripts o cualquier contenido molesto con métodos sencillos.
+
+Te ayudara a bloquear los anuncios, seguimientos, scripts o cualquier contenido molesto con métodos sencillos.
+
+= Caracteristicas
+
+* Bloqua anuncios publicitarios mediante filtros de suscripcion.
+* Añade reglas clicando en los elementos que quieres bloquear.
+* Ocultar elementos molestos por reglas de selectores CSS.
+* Prohibe la ejecucion de scritps de la pagina (desactivado por defecto).
+
+= Uso
+
+== Bloquear anuncios publicitarios por suscripciones
+
+Marca las suscripciones que desees en las listas de suscripcion (Suscribed list) y clica en 'Iniciar suscripcion' (Start to subscribe).
+
+== Añadir reglas de bloqueo
+
+# Selecciona ContentBlockHelper del menu contextual en la pagina (boton derecho del raton).
+# Selecciona el tipo de contenido que quieres bloquear.
+# Clica  en el elemento que quieras bloquear.
+# Elige una regla deslizando la barra del selector.
+# selecciona el comando de 'Aplicar todas las reglas de bloqueo del menu contextual (Apply all blocking rules).
+# Recarga la pagina si las reglas de bloqueo no se han aplicado.
+
+== Prohibir la ejecucion de scripts
+
+Esta funcion esta deshabilitada por defecto. Puedes activarlo en la pestaña 'Comportamiento' (Behavior).
+
+; Off : Permite la ejecucion de scripts.
+; Third party scripts : Los scripts de linea del mismo dominio y subdominios son ejecutados.
+; External scripts : Scripts de linea y del mismo dominio son ejecutados.
+; All scripts : Prohibe la ejecucion de todos los script de la pagina. Si quieres ejecutar scripts de una determinada pagina añade la URL de la pagina a la lista de 'Permitidos' (Allowed)
+
+Puedes saber cual es el nivel de origen de los scripts por el color del icono de la extension del boton.
+
+; Violeta  : Ningun script esta ejecutandose.
+; Azul     : Scripts de linea se estan ejecutando.
+; verde    : Scripts del mismo host se estan ejecutando.
+; Amarillo : Scripts fuera del mimo host pero del mimo dominio se estan ejecutando.
+; Rojo     : Scripts de terceras partes se estan ejecutado.
+
+= Extensiones similares
+
+* AdBlock
+* AdBlock Plus
+* AdBlock Pro
+* NoAds Advanced
+* NotScripts
+* External Scripts

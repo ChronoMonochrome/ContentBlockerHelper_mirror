@@ -1,0 +1,38 @@
+﻿Pomaže vam da blokirate reklame, praćenje ili bilo koju skriptu i dosadni sadržaj jednostavnim metodama.
+
+Ova ekstenzija vam pomaže blokirati reklame, praćenje ili bilo koju skriptu i dosadni sadržaj  jednostavnim metodama.
+
+= Mogućnosti
+
+* Blokira reklame prema unapred odabranom filteru (AdBlock Plus format)
+* Uređivanje pravila na jednostavan način
+* Zabranjuje izvršavanje skripti na stranici
+* Sinhronizacija postavki filtera (beta)
+
+= Pretplate
+
+Označite vašu željenu pretplatu sa liste i kliknite "Počni sa pretplatom".
+
+= Uređivanje pravila
+
+Imate nekoliko načina za uređivanje pravila.
+
+* U iskačućem (pop-up) prozoru ekstenzije
+* Po kontekstnom meniju
+* Na strani "Opcije"
+
+== Uređivanje pravila po kontekstnom meniju
+
+# Izaberite "Izmeni" iz menija
+# Kliknite na element koji želite blokirati
+# Odaberite pravilo na kliznoj traci selektora
+# Primena klikom na dugme Dodaj / Ukloni
+
+= Zabranjivanje izvršavanja skripte
+
+Možete zabraniti izvršenje skripte jednostavno, bez URL filtara.
+
+; Isključeno: omogućava izvršavanje skripti.
+; Spoljne skripte: izvršiće se ugrađene skripte, sa istog domena i pod-domena.
+; Skripte sa treće strane: izvršiće se ugrađene skripte i skripte sa istog domena.
+; Sve skripte: zabranjuje izvršavanja svih skripti na stranici.

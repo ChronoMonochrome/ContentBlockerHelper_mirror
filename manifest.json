@@ -1,0 +1,62 @@
+{
+   "author": "Whochan",
+   "background": {
+      "page": "index.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "buttons/disabled.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "ContentBlockHelper"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "lib/WHO.extension.client.js", "includes/cbhResourceDetector.js" ],
+      "match_about_blank": false,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "lib/WHO.URL.js", "includes/cbhElementRemover.js", "includes/cbhFilterMaker.js", "includes/usoContentBlockHelper.js" ],
+      "match_about_blank": false,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "includes/removeInlineStylesheet.js", "includes/cbhUIProtection.js" ],
+      "match_about_blank": false,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": false,
+      "js": [ "includes/5ch.js" ],
+      "match_about_blank": false,
+      "matches": [ "*://*.5ch.net/*", "*://*.2ch.net/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_DESCRIPTION__",
+   "homepage_url": "https://far.whochan.com/",
+   "icons": {
+      "128": "icons/icon112.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "64": "icons/icon64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjUajhwxP0AkMa7xqaA8J/MEZLD7cfn3aFj/taopbYKJItawL5iTBDE+1LtTwS7Ssbn06eaossVtkOLQ8srjW6qSmw0M5yTzo2HjaLRAliKj983tM9oGkFcdpApwpftZxZiifk0wVmR4g8FeKhei2cSEgq27V7tSdJxiIrzuRvCQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "80.0",
+   "name": "ContentBlockHelper",
+   "options_ui": {
+      "chrome_style": false,
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "http://*/*", "https://*/*", "tabs", "contextMenus", "webNavigation", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "10.5.1",
+   "web_accessible_resources": [ "images/spacer.png", "blocked/*" ]
+}

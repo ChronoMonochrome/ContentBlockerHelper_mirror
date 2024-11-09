@@ -1,0 +1,29 @@
+Helps you to block advertisements, tracking or any scripts and any annoying contents with easy methods.
+
+This extension helps you to block advertisements, tracking or any scripts and any annoying contents with easy methods.
+
+= Features
+
+* Subscribe public filters of AdBlock Plus format
+* Edits rules by easy ways
+* Protects browser's default UI
+* Light & Fast engine
+
+= Public filters
+
+Turn on your wanted filters in list and click "Start to subscribe".
+
+= Quick filters
+
+Quick filters can block contents by just switching slider without editing complex filters.
+
+Filters becomes stronger by switching the slider from left to right.
+
+= Custom filters
+
+You can add/remove a rule by just clicking buttons on the contents list in the extension-popup. You may edit them exactly in the preferences page.
+
+= Exact format of rules
+
+URL pattern is similar to AdBlock format, but CBH requires wildcard (*) on forward or backward like "||example.com/*". On the other hand, Forward/Backward match "|" is not required.
+

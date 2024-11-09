@@ -1,0 +1,317 @@
+@-o-viewport
+{
+	width:device-width;
+}
+body
+{
+	min-width:320px;
+}
+h2
+{
+	white-space:nowrap;
+	overflow:visible;
+	text-overflow:ellipsis;
+}
+
+/*************************
+    サイト別のフィルタ設定
+*************************/
+
+#Filters
+{
+	position:relative;
+	height:420px;
+	width:320px;
+	overflow:hidden;
+	max-width:600px;
+	max-height:480px;
+	resize:both;
+	padding-bottom:8px;
+}
+#Filters::after
+{
+	display:block;
+	content:"";
+	position:absolute;
+	bottom:0;
+	height:8px;
+	width:100%;
+	z-index:10;
+}
+#Filters h2
+{
+	position:relative;
+	width:100%;
+	height:1.5em;
+	line-height:16px;
+/*	position:absolute;*/
+/*	top:0;*/
+	z-index:10;
+}
+#Filters h2>ul
+{
+	background:#666;
+	border-radius:0 0 8px 8px;
+}
+
+#Filters *
+{
+	resize:none;
+}
+
+/* 黙認規則の時簡易規則は表示しない */
+#Filters[data-ignored="ignored"] #SimpleFilter,
+#Filters[data-ignored="ignored"] #UIProtection
+{
+	display:none;
+}
+#Filters[data-ignored="ignored"] #Details
+{
+	top:24px !important;
+}
+
+/****************/
+/* 簡易フィルタ */
+/****************/
+#SimpleFilter form
+{
+	padding:1em 0;
+}
+#SimpleFilter label
+{
+	height:16px;
+	padding:0 20px;
+}
+#SimpleFilter img
+{
+	margin-left:-20px;
+}
+#SimpleFilter input
+{
+	width:100%;
+	height:16px;
+	margin:0;
+	padding:0;
+	margin-right:-20px;
+}
+#SimpleFilter input + img
+{
+	margin-right:-20px;
+	float:right;
+}
+/********************/
+/*    UIの保護      */
+/********************/
+#UIProtection input[type="checkbox"]
+{
+	-webkit-appearance: initial;
+	-moz-appearance: initial;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	line-height:16px;
+	margin:0;
+	padding:0;
+	box-shadow:none;
+	border:0 solid;
+	color:transparent;
+	vertical-align:top;
+	filter: grayscale(100%) contrast(50%) brightness(70%);
+}
+#UIProtection input[type="checkbox"]:checked
+{
+	filter: none;
+}
+#UIProtection .selectstart {background:url("../images/events/selectstart.png");}
+#UIProtection .contextmenu {background:url("../images/events/contextmenu.png");}
+#UIProtection .copy        {background:url("../images/events/copy.png");}
+#UIProtection .cut         {background:url("../images/events/cut.png");}
+#UIProtection .paste       {background:url("../images/events/paste.png");}
+#UIProtection .mousedown   {background:url("../images/events/mousedown.png");}
+/*************************
+   詳細設定
+*************************/
+#Details
+{
+	position:absolute;
+	left:0;
+	right:0;
+	top:20px;
+	bottom:8px;
+	background:#444;
+	padding:4px 0;
+	overflow:auto;
+}
+/*************************
+    リソースのリスト
+*************************/
+
+#Contents,
+#Filters ul
+{
+	text-indent:0;
+	margin-left:6px;
+	font-size:10px;
+	line-height:16px;
+}
+#Filters h2>ul
+{
+	margin-right:6px;
+}
+#Filters li
+{
+	line-height:16px;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	width:100%;
+	overflow:hidden;
+}
+/* トグルボタン */
+#Filters li>button:first-child
+{
+	margin-left:16px;
+}
+/* パターンのホスト名部分 */
+#Filters span.hostname
+{
+	font-size:12px;
+	color:#cccc66;
+}
+/*************************
+	規則ボタン
+*************************/
+/* ブロック可能な要素 */
+#Filters button.badge
+{
+	color:transparent;
+	border:solid 0px transparent;
+	background:transparent url('/images/loaded/unlisted.png');
+}
+/* 変更不可能な規則 */
+#Contents li button:disabled
+{
+	opacity:0.7;
+}
+
+/* ページ */
+#Filters [data-isDocument="true"] .badge
+{
+	background:transparent url('/images/loaded/remarked.png');
+}
+
+#Filters [data-isDocument="true"] li[data-loaded="ignored"]>.badge
+{
+	background:transparent url('/images/loaded/ignored.png');
+}
+
+/* ファビコン */
+.badge>img
+{
+	background:#ccc;
+	border-radius:2px;
+}
+[data-loaded="failed"]>.badge>img,
+[data-loaded="blocked"]>.badge>img,
+[data-rule-act="block"]>.badge>img,
+[data-rule-act="allow"]>.badge>img
+{
+	visibility:hidden;
+}
+li:hover .badge>img,
+h2:hover .badge>img
+{
+	visibility:hidden;
+}
+
+/* 無視された要素 */
+#Filters [data-rule-act="ignore"]>.badge
+{
+	background:transparent url('/images/loaded/ignored.png');
+}
+#Filters [data-rule-act="ignore"][data-listed="cus"]>.badge
+{
+	background:transparent url('/images/loaded/ignored.png');
+}
+#Filters [data-rule-act="ignore"][data-listed="sub"]>.badge
+{
+	background:transparent url('/images/loaded/ignored.png');
+}
+
+/* 読み込みに失敗した */
+#Contents li[data-loaded="failed"]>.badge
+{
+	background:transparent url('/images/loaded/failed.png');
+}
+/* 読み込まれた */
+#Contents li[data-loaded="loaded"]>.badge
+{
+	background:transparent url('/images/loaded/loaded.png');
+}
+/* 簡易フィルタにより遮断された要素 */
+#Contents li[data-loaded="blocked"]>.badge
+{
+	background:transparent url('/images/loaded/blocked_auto.png');
+}
+#Contents li[data-loaded="ignored"]>.badge
+{
+	background:transparent url('/images/loaded/allowed.png');
+}
+/* 遮断された要素 */
+#Contents li[data-rule-act="block"]>.badge
+{
+	background:transparent url('/images/loaded/blocked.png');
+}
+#Contents li[data-rule-act="block"][data-listed="cus"]>.badge
+{
+	background:transparent url('/images/loaded/blocked_cus.png');
+}
+#Contents li[data-rule-act="block"][data-listed="sub"]>.badge
+{
+	background:transparent url('/images/loaded/blocked_sub.png');
+}
+#Contents li[data-listed="opr"]>.badge
+{
+	background:transparent url('/images/loaded/blocked_opr.png');
+}
+/* 許可された要素 */
+#Contents li[data-rule-act="allow"]>.badge
+{
+	background:transparent url('/images/loaded/allowed.png');
+}
+#Contents li[data-rule-act="allow"][data-listed="cus"]>.badge
+{
+	background:transparent url('/images/loaded/allowed_cus.png');
+}
+#Contents li[data-rule-act="allow"][data-listed="sub"]>.badge
+{
+	background:transparent url('/images/loaded/allowed_sub.png');
+}
+/*************************
+    オプションボタン
+*************************/
+#Contents li .option[src$="font.png"]
+{
+	-webkit-filter: invert(100%) /*contrast(100%) brightness(1.5)*/;
+	-moz-filter   : invert(100%) /*contrast(100%) brightness(1.5)*/;
+	-ms-filter    : invert(100%) /*contrast(100%) brightness(1.5)*/;
+	filter        : invert(100%) /*contrast(100%) brightness(1.5)*/;
+}
+
+#Contents li .host
+{
+	display:inline-block;
+	width :8px;
+	height:16px;
+}
+
+/********************/
+/*    トグルノブ    */
+/********************/
+.nob ~ ul
+{
+	display:none;
+}
+.nob:checked ~ ul
+{
+	display:block;
+}

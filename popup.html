@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>ContentBlockHelper</title>
+
+<link rel="stylesheet" href="styles/general.css" type="text/css" />
+<link rel="stylesheet" href="styles/popup.css" type="text/css" />
+<link rel="stylesheet" href="styles/siteprefs.css" type="text/css" />
+<link rel="stylesheet" href="styles/filters.css" type="text/css" />
+<link rel="stylesheet" href="styles/simplefilter.css" type="text/css" />
+<link rel="stylesheet" href="styles/nob.css" type="text/css" />
+
+<link rel="shortcut icon" href="favicon.ico" title="Favorite Icon" />
+
+<script src="lib/WHO.widget.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/WHO.extension.client.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/WHO.URL.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/WHO.locale.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="lib/WHO.popup.client.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="scripts/siteSimpleFilter.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/siteUIProtection.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/popup.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="scripts/myExtensions.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+<h1>ContentBlockHelper</h1>
+<div id="Filters">
+<!--	<h2 id="SiteName"></h2>-->
+	<form id="SimpleFilter">
+	</form>
+	<form id="UIProtection">
+		<p>[:UIProtection:]
+			<input type="checkbox" value="0" class="selectstart" title="[:UIProtection::selectstart:]" />
+			<input type="checkbox" value="1" class="contextmenu" title="[:UIProtection::contextmenu:]" />
+			<input type="checkbox" value="2" class="copy" title="[:UIProtection::copy:]" />
+			<input type="checkbox" value="3" class="cut" title="[:UIProtection::cut:]" />
+			<input type="checkbox" value="4" class="paste" title="[:UIProtection::paste:]" />
+			<input type="checkbox" value="5" class="mousedown" title="[:UIProtection::mousedown:]" />
+			<!--
+			<input type="checkbox" value="6" title="[:UIProtection::mouseup:]" />
+			<input type="checkbox" value="7" title="[:UIProtection::click:]" />
+			-->
+		</p>
+	</form>
+	<form id="Details">
+		<ul id="Contents"></ul>
+	</form>
+</div>
+<div id="Preferences">
+	<h2>[:Preferences:]</h2>
+	<ul class="link">
+		<li><a href="options.html#General" target="_blank"><img src="images/general.png" width="16" height="16" alt="[:General:]" title="[:General:]" /></a></li>
+		<li><a href="options.html#Subscriptions" target="_blank"><img src="images/subscribed.png" width="16" height="16" alt="[:Subscriptions:]" title="[:Subscriptions:]" /></a></li>
+		<li><a href="options.html#Customizations" target="_blank"><img src="images/customized.png" width="16" height="16" alt="[:Customizations:]" title="[:Customizations:]" /></a></li>
+		<li><a href="options.html#CSSRules" target="_blank"><img src="images/css.png" width="16" height="16" alt="[:CSSRules:]" title="[:CSSRules:]" /></a></li>
+		<li><a href="options.html#Keyboard" target="_blank"><img src="images/keyboard.png" width="16" height="16" alt="[:Keyboard:]" title="[:Keyboard:]" /></a></li>
+		<li><a href="options.html#Tools" target="_blank"><img src="images/tools.png" width="16" height="16" alt="[:Tools:]" title="[:Tools:]" /></a></li>
+		<li><a href="options.html#Help" target="_blank"><img src="images/help.png" width="16" height="16" alt="[:Help:]" title="[:Help:]" /></a></li>
+		<li><a href="http://www.amazon.co.jp/registry/wishlist/2L2MRGTC133TV" target="_blank"><img src="images/donation.png" width="16" height="16" alt="[:Donation:]" title="[:Donation:]" /></a></li>
+	<!--	<li><a href="" target="_blank" id="FacebookButton"><img src="images/facebook.png" width="16" height="16" alt="Facebook" title="Facebook" /></a></li>-->
+		<li><a href="" target="_blank" id="TwitterButton"><img src="images/twitter.png" width="16" height="16" alt="Twitter" title="Twitter" /></a></li>
+	</ul>
+</div>
+<!-- Don't translate from here -->
+<div id="Extensions">
+	<h2>FAR Extensions</h2>
+	<ul class="link" id="FAR">
+		<li title="ContentBlockHelper"><a href="http://far.whochan.com/wlog.cgi/ContentBlockHelper" target="_blank"><img alt="ContentBlockHelper" src="banners/contentblockhelper.png" width="140" height="20" /></a></li>
+		<li title="LinkRedirector"><a href="http://far.whochan.com/wlog.cgi/LinkRedirector" target="_blank"><img alt="LinkRedirector" src="banners/linkredirector.png" width="140" height="20" /></a></li>
+		<li title="ImagePreviewer"><a href="http://far.whochan.com/wlog.cgi/ImagePreviewer" target="_blank"><img alt="ImagePreviewer" src="banners/imagepreviewer.png" width="140" height="20" /></a></li>
+		<li title="SlideshowPlayer"><a href="http://far.whochan.com/wlog.cgi/SlideshowPlayer" target="_blank"><img alt="SlideshowPlayer" src="banners/slideshowplayer.png" width="140" height="20" /></a></li>
+		<li title="WebScheduler"><a href="http://far.whochan.com/wlog.cgi/WebScheduler" target="_blank"><img alt="WebScheduler" src="banners/webscheduler.png" width="140" height="20" /></a></li>
+		<li title="PageSticker"><a href="http://far.whochan.com/wlog.cgi/PageSticker" target="_blank"><img alt="PageSticker" src="banners/pagesticker.png" width="140" height="20" /></a></li>
+		<li title="TaggingNotes"><a href="http://far.whochan.com/wlog.cgi/TaggingNotes" target="_blank"><img alt="TaggingNotes" src="banners/taggingnotes.png" width="140" height="20" /></a></li>
+	</ul>
+</div>
+<address><a href="http://far.whochan.com/" target="_blank">[:ADDRESS::FAR:]</a></address>
+</body>
+</html>

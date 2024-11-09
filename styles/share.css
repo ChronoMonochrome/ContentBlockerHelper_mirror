@@ -1,0 +1,16 @@
+html,body,ul,li,iframe
+{
+	margin:0;
+	padding:0;
+	border:0;
+	overflow:hidden;
+	line-height:20px;
+	text-align:center;
+	vertical-align:top;
+}
+iframe
+{
+	width:110px !important;
+	height:20px !important;
+	border:none !important;
+}

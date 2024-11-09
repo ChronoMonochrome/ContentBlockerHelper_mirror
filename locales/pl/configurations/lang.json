@@ -1,0 +1,59 @@
+{
+	"LanguageFileDoNotEdit"              : "このファイルはエクステンションの言語ファイルです。",
+
+	"lang"                               : "pl",
+	"translator"                         : "joksik",
+	"translator::url"                    : "http://my.opera.com/joksik/about/",
+
+	"disabled"                           : "ContentBlockHelper jest wyłączony. Odśwież stronę.",
+
+	"Preferences"                        : "Ustawienia",
+
+	"General"                            : "Opcje",
+	"General::SubscribeInterval"         : "Aktualizuj subskrypcje list (wartość wyrażona w dniach) : ",
+
+	"Permanences"                        : "Stała Lista",
+	"Permanences::Get"                   : "Pobierz z: Opera Link",
+
+	"Subscriptions"                      : "Lista subskrypcji",
+	"Subscriptions::SaveChange"          : "Zacznij subskrypcje",
+	"Subscriptions::AddNew"              : "Dodaj",
+	"Subscriptions::delete"              : "Usuń",
+
+	"Customizations"                     : "Tymczasowa Lista",
+	"Customizations::SaveChange"         : "Zapisz zmiany",
+
+	"CSSRules"                           : "Reguły CSS",
+	"CSSRules::SaveChange"               : "Zapisz zmiany",
+	"CSSRules::AddNew"                   : "Dodaj nową regułę",
+	"CSSRules::ClearAll"                 : "Wyczyść wszystko",
+	"CSSRules::delete"                   : "Usuń to.",
+
+	"Tools"                              : "Narzędzia",
+	"Tools::OAuth"                       : "OAuth",
+	"Tools::OAuth::ClearToken"           : "Wyloguj z Opera Link",
+
+	"Help"                               : "Pomoc",
+	"Help::Forum"                        : "Forum",
+	"Help::Forum::Questions"             : "Pytania i Instrukcje",
+	"Help::Forum::Requests"              : "Zgłoś nowy pomysł",
+	"Help::Forum::Report"                : "Zgłoś błędy",
+	"Help::Forum::Translations"          : "Tłumaczenia",
+	"Help::Downloads::Development"       : "Pobierz Wersje Testową",
+	"Help::Translations"                 : "Translations",
+	"Help::Licenses"                     : "Licenses",
+
+	"ADDRESS::FAR"                       : "FAR/RAKUDA",
+	"ADDRESS::Support"                   : "Strona Wsparcia Technicznego",
+
+	"Mode"                               : "Tryb Blokowania",
+	"Mode::module"                       : "Aktualizuje tymczasowe reguły skryptów w head.",
+	"Mode::script"                       : "Aktualizuje tymczasowe reguły skryptów w body.",
+	"Mode::iframe"                       : "Aktualizuje tymczasowe reguły iframe/embed/img.",
+	"Mode::css"                          : "Aktualizuje reguły CSS.",
+	"Mode::normal"                       : "Rozpoczynam blokowanie zawartości.",
+
+	"Contents"                           : "Zewnętrzne skrypty",
+
+	"eof":""
+}

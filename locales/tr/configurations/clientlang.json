@@ -1,0 +1,10 @@
+﻿{
+	"Confirm::addBlockRule"        : "Geçici listeye eklensin mi?",
+	"Confirm::removeBlockRule"     : "Geçici listeden silinsin mi?",
+	"Confirm::addAllowRule"        : "Kalıcı listeye eklensin mi?",
+	"Confirm::removeAllowRule"     : "Kalıcı listeden silinsin mi?",
+	"Confirm::AddCSSRule"          : "CSS kurallarına eklensin mi?",
+	"Confirm::RemoveCSSRule"       : "CSS kurallarından silinsin mi?",
+
+	"eof":""
+}

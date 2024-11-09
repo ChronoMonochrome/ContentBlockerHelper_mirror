@@ -1,0 +1,23 @@
+/********************/
+/*    トグルノブ    */
+/********************/
+input[type="checkbox"].nob
+{
+	-webkit-appearance: initial;
+	-moz-appearance   : initial;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	line-height:16px;
+	margin:0;
+	padding:0;
+	box-shadow:none;
+	border:0 solid;
+	color:transparent;
+	background:url("../images/expand.png");
+	vertical-align:top;
+}
+input[type="checkbox"].nob:checked
+{
+	background:url("../images/collapse.png");
+}

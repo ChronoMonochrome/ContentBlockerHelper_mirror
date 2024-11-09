@@ -1,0 +1,10 @@
+{
+	"Confirm::addBlockRule"        : "Zur temporären Liste hinzufügen?",
+	"Confirm::removeBlockRule"     : "Von der temporären Liste entfernen?",
+	"Confirm::addAllowRule"        : "Zur Liste der zugelassenen Seiten hinzufügen?",
+	"Confirm::removeAllowRule"     : "Von der Liste der zugelassenen Seiten entfernen?",
+	"Confirm::AddCSSRule"          : "Zu den CSS-Regeln hinzuügen?",
+	"Confirm::RemoveCSSRule"       : "Aus den CSS-Regeln entfernen?",
+
+	"eof":""
+}

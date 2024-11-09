@@ -1,0 +1,58 @@
+﻿{
+	"LanguageFileDoNotEdit"              : "このファイルはエクステンションの言語ファイルです。",
+
+	"lang"                               : "tr",
+	"translator"                         : "zahek",
+	"translator::url"                    : "http://my.opera.com/zahek",
+
+	"disabled"                           : "ContentBlockHelper devre dışı. Sayfayı yenileyin.",
+
+	"Preferences"                        : "Tercihler",
+
+	"General"                            : "Operasyon",
+	"General::SubscribeInterval"         : "Abonelikleri güncelleme sıklığı(gün) : ",
+
+	"Permanences"                        : "Kalıcı Liste",
+	"Permanences::Get"                   : "Opera Link'ten al",
+
+	"Subscriptions"                      : "Abonelik Listesi",
+	"Subscriptions::SaveChange"          : "Aboneliği başlat",
+	"Subscriptions::AddNew"              : "Ekle",
+	"Subscriptions::delete"              : "Sil",
+
+	"Customizations"                     : "Geçici Liste",
+	"Customizations::SaveChange"         : "Değişiklikleri Kaydet",
+
+	"CSSRules"                           : "CSS Kuralları",
+	"CSSRules::SaveChange"               : "Değişiklikleri Kaydet",
+	"CSSRules::AddNew"                   : "Yeni kural ekle",
+	"CSSRules::ClearAll"                 : "Tümünü Temizle",
+	"CSSRules::delete"                   : "Bunu sil.",
+
+	"Tools"                              : "Araçlar",
+	"Tools::OAuth"                       : "OAuth",
+	"Tools::OAuth::description"          : "Opera Link API, OAuth kullanmaktadır. Hesap şifreniz sunucuya sadece yetkilendirme amacıyla gönderilmektedir, bu yüzden eklenti hiçbir şekilde şifrenizi saklamamaktadır.",
+	"Tools::OAuth::ClearToken"           : "Yetkilendirme Erişim Uyarısını temizleyin.",
+
+	"Help"                               : "Yardım",
+	"Help::Forum"                        : "Forum",
+	"Help::Forum::Questions"             : "Sorular ve Rehberler",
+	"Help::Forum::Requests"              : "İstekler ve Fikirler",
+	"Help::Forum::Report"                : "Hata Bildirme",
+	"Help::Forum::Translations"          : "Çeviriler",
+	"Help::Downloads::Development"       : "Geliştirme Sürümlerini İndir",
+
+	"ADDRESS::FAR"                       : "FAR/RAKUDA",
+	"ADDRESS::Support"                   : "Destek Sayfası",
+
+	"Mode"                               : "Engelleme Modu",
+	"Mode::module"                       : "Başlıktaki betikler için geçici kurallar güncelleniyor.",
+	"Mode::script"                       : "Updating the temporary rules of scripts in body.",
+	"Mode::iframe"                       : "iframe/embed/img için geçici kurallar güncelleniyor.",
+	"Mode::css"                          : "CSS kuralları güncelleniyor",
+	"Mode::normal"                       : "İçerikleri engellemeye başla.",
+
+	"Contents"                           : "Harici İçerikler",
+
+	"eof":""
+}

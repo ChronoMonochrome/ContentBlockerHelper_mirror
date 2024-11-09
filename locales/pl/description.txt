@@ -1,0 +1,61 @@
+﻿Te rozszerzenie pomaga blokować zawartości stron na wiele sposobów.
+
+Operowa funkcja "blokowania zawartości" jest użyteczne, jednak nie może blokować iframe/skryptów/elementów CSS. Jeśli zainstalujesz te rozszerzenie będziesz w stanie zablokować wszystko prostym kliknięciem myszy. Jeśli chcesz blokować elementy "ręcznie", pewnie ten dodatek będzie bardziej użyteczny niż NoAds lub Adblock. ContentBlocker umożliwia również import filtrów z AdBlocka Plus.
+
+= Podstawowe Właściwości
+
+* Blokowanie zawartości za pomocą subskrypcji filtrów.
+* Dodawanie tymczasowych reguł filtrów url za pomocą Opera Extensions API.
+* Bardziej rozwinięta wersja blokowania zawartości z Opery.
+* Zapis reguł do Opera Link.
+* Blokowanie elementów HTML za pomocą selektora CSS.
+* Automatycznie blokowanie skryptów zewnętrznych za pomocą "BeforeScript".
+
+== Podstawowe Ustawienia
+
+Włącz subskrypcje (wybierając listę w opcjach) i włącz automatyczne blokowanie skryptów zewnętrznych również w ustawieniach dodatku.
+
+== Blokowanie
+
+# Kliknij w ikonkę rozszerzenia ContentBlockHelpera widoczną na pasku dodatków.
+# Wybierz metodę blokowania.
+
+== Tymczasowe Blokowanie
+
+Jeśli chcesz blokować zawartość strony krok po kroku, użytej tego rozwiązania. Ale stworzone przez Ciebie reguły za pomocą tymczasowego blokowania będą niedostępne, gdy rozszerzenie jest wyłączone.
+
+# Kliknij w kolor niebieski (iframe) lub czerwony (skrypt), aby wybrać jaki element chcesz zablokować.
+# Wybierz regułę z listy, która pojawiła się na stronie i kliknij w nią.
+
+== Stałe Blokowanie
+
+Jeśli chcesz na stałe zablokować zawartość strony i synchronizować swoje ustawienia wybierz tą opcję. Stworzone reguły tą metodą bedą włączone nawet gdy, rozszerzenie jest wyłączone.
+
+# Wejdź do Operowego blokowania zawartości, opcja "Zablokuj zawartość"
+# Kliknij w kolor niebieski (iframe) lub czerwony (skrypt), aby wybrać jaki element chcesz zablokować.
+# Wybierz opcję "Zrobione".
+
+== Blokowanie CSS
+
+Elementy HTML, które nie mogą być zablokowane mogą być ukryte tym sposobem.
+
+# Kliknij w dowolny element
+# Wybierz regułę z listy i kliknij w nią.
+
+== Koniec
+
+# Kliknij ponownie w ikonkę rozszerzenia ContentBlockHelpera widoczną na pasku dodatków.
+# Wybierz opcję "Zrobione".
+# Odśwież stronę, jeśli reguły nie zostały automatycznie zastosowane.
+
+== Zapis reguł
+
+Możesz zapisać swoje tymczasowe role w Opera Link we właściwości rozszerzenia. Zapisane reguły zostaną automatycznie usunięte z pola tymczasowe reguły.
+
+= Licenses
+ 
+; Fugue Icons
+: Copyright (C) 2010 Yusuke Kamiyamane. All rights reserved.
+: http://p.yusukekamiyamane.com/
+: The icons are licensed under a Creative Commons Attribution 3.0 license. 
+: http://creativecommons.org/licenses/by/3.0/

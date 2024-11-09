@@ -1,0 +1,18 @@
+{
+	"Confirm::addBlockRule"        : "Добавить в список блокируемого содержимого?",
+	"Confirm::removeBlockRule"     : "Удалить из списка блокируемого содержимого?",
+	"Confirm::addAllowRule"        : "Добавить в список разрешенного содержимого?",
+	"Confirm::removeAllowRule"     : "Удалить из списка разрешенного содержимого?",
+	"Confirm::AddCSSRule"          : "Добавить правило CSS?",
+	"Confirm::RemoveCSSRule"       : "Удалить правило CSS?",
+
+	"ApplyButton::AddRule"         : "Добавить правило",
+	"ApplyButton::AddAllowRule"    : "Добавить в список разрешенного содержимого",
+	"ApplyButton::RemoveBlockRule" : "Удалить из списка блокируемого содержимого",
+	"ApplyButton::RemoveAllowRule" : "Удалить из списка разрешенного содержимого",
+	"ApplyButton::Disabled"        : "Отключено",
+	"ApplyButton::AddCSSRule"      : "Добавить правило CSS",
+	"ApplyButton::RemoveCSSRule"   : "Удалить правило CSS",
+
+	"eof":""
+}

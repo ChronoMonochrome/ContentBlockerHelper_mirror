@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>ContentBlockHelper</title>
+
+<link rel="shortcut icon" href="favicon.ico" title="Favorite Icon" />
+
+<link rel="stylesheet" href="styles/general.css" type="text/css" />
+<link rel="stylesheet" href="styles/options.css" type="text/css" />
+<link rel="stylesheet" href="styles/options_cbh.css" type="text/css" />
+<link rel="stylesheet" href="styles/filters.css" type="text/css" />
+<link rel="stylesheet" href="styles/simplefilter.css" type="text/css" />
+<link rel="stylesheet" href="styles/nob.css" type="text/css" />
+
+<script src="lib/WHO.widget.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/WHO.screenmask.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/WHO.extension.client.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/WHO.URL.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/WHO.locale.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="scripts/prefsContextMenus.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/prefsSimpleFilter.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/prefsUIProtection.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/prefsBehavior.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/prefsSubscriptions.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/prefsCustomizations.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/prefsCSSRules.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/prefsTools.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/prefsOperation.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="scripts/options.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+<h1>ContentBlockHelper - [:Preferences:]</h1>
+<div>
+	<section id="General">
+		<h2><a href="#General"><img src="/images/general.png" width="16" height="16" alt="[:General:]" title="[:General:]" /></a></h2>
+		<div class="content">
+			<form>
+				<p id="BottonConfigContainer"><label><input id="ButtonView" type="checkbox" />[:General::ButtonView:]</label></p>
+				<p><label><input id="ContextMenu" type="checkbox" />[:General::ContextMenu:]</label></p>
+<!--
+				<p><label><input type="checkbox" id="AlwaysSync" />[:General::AlwaysSync:]</label></p>
+-->
+				<p><label>[:General::SubscribeInterval:]<input id="SubscribeInterval" type="number" value="0" min="0" max="30" step="1" /></label></p>
+				<fieldset id="SimpleFilter">
+					<legend>[:SimpleFilter:]</legend>
+<!--
+					<p>
+						<label>
+							[:Rule::type::script:]
+							<span>
+								<img src="images/types/script.png" alt="+" title="[:SimpleFilter::level::0:]" />
+								<input id="SimpleFilter_script" type="range" min="0" max="5" />
+								<img src="images/types/script.png" alt="-" title="[:SimpleFilter::level::5:]" />
+							</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							[:Rule::type::stylesheet:]
+							<span>
+								<img src="images/types/stylesheet.png" alt="+" title="[:SimpleFilter::level::0:]" />
+								<input id="SimpleFilter_stylesheet" type="range" min="0" max="5" />
+								<img src="images/types/stylesheet.png" alt="-" title="[:SimpleFilter::level::5:]" />
+							</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							[:Rule::type::sub_frame:]
+							<span>
+								<img src="images/types/sub_frame.png" alt="+" title="[:SimpleFilter::level::0:]" />
+								<input id="SimpleFilter_sub_frame" type="range" min="0" max="5" />
+								<img src="images/types/sub_frame.png" alt="-" title="[:SimpleFilter::level::5:]" />
+							</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							[:Rule::type::image:]
+							<span>
+								<img src="images/types/image.png" alt="+" title="[:SimpleFilter::level::0:]" />
+								<input id="SimpleFilter_image" type="range" min="0" max="5" />
+								<img src="images/types/image.png" alt="-" title="[:SimpleFilter::level::5:]" />
+							</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							[:Rule::type::object:]
+							<span>
+								<img src="images/types/object.png" alt="+" title="[:SimpleFilter::level::0:]" />
+								<input id="SimpleFilter_object" type="range" min="0" max="5" />
+								<img src="images/types/object.png" alt="-" title="[:SimpleFilter::level::5:]" />
+							</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							[:Rule::type::redirect:]
+							<span>
+								<img src="images/types/redirect.png" alt="+" title="[:SimpleFilter::level::0:]" />
+								<input id="SimpleFilter_redirect" type="range" min="0" max="5" step="2" />
+								<img src="images/types/redirect.png" alt="-" title="[:SimpleFilter::level::5:]" />
+							</span>
+						</label>
+					</p>
+-->
+				</fieldset>
+				<fieldset id="UIProtection">
+					<legend>[:UIProtection:]</legend>
+					<p><label><input type="checkbox" value="0" />[:UIProtection::selectstart:]</label></p>
+					<p><label><input type="checkbox" value="1" />[:UIProtection::contextmenu:]</label></p>
+					<p><label><input type="checkbox" value="2" />[:UIProtection::copy:]</label></p>
+					<p><label><input type="checkbox" value="3" />[:UIProtection::cut:]</label></p>
+					<p><label><input type="checkbox" value="4" />[:UIProtection::paste:]</label></p>
+					<p><label><input type="checkbox" value="5" />[:UIProtection::mousedown:]</label></p>
+					<!--
+					<p><label><input type="checkbox" value="6" />[:UIProtection::mouseup:]</label></p>
+					<p><label><input type="checkbox" value="7" />[:UIProtection::click:]</label></p>
+					-->
+				</fieldset>
+			</form>
+		</div>
+	</section>
+	<section id="Subscriptions">
+		<h2><a href="#Subscriptions"><img src="/images/subscribed.png" width="16" height="16" alt="[:Subscriptions:]" title="[:Subscriptions:]" /></a></h2>
+		<div class="content">
+			<p class="description">[:Subscriptions::description:]</p>
+			<form>
+				<div class="buttons">
+					<button type="button" id="SaveChangeSubscriptions">[:Subscriptions::SaveChange:]</button>
+					<button type="button" id="AddNewSubscription">[:Subscriptions::AddNew:]</button>
+				</div>
+			<!--	<div><span class="del" title="Click to Remove."></span><span class="label" title="Check to subscript.">Name</span><span class="url">Address</span></div>-->
+				<div>
+					<input type="checkbox" id="ShowForeign" /><label for="ShowForeign">[:Subscriptions::ShowForeign:]</label>
+					<ul class="field" id="SubscriptionsField"></ul>
+				</div>
+			<!--	<div class="field"><textarea id="SubscribedRules" cols="50" rows="20" readonly="readonly"></textarea></div>-->
+			</form>
+		</div>
+	</section>
+	<section id="Customizations">
+		<h2><a href="#Customizations"><img src="/images/customized.png" width="16" height="16" alt="[:Customizations:]" title="[:Customizations:]" /></a></h2>
+		<div class="content">
+			<p class="description">[:Customizations::description:]</p>
+			<form>
+				<div class="buttons">
+					<button type="button" id="SaveChangeCustomizations">[:Customizations::SaveChange:]</button>
+					<button type="button" id="AddNewCustomizations">[:Customizations::AddNew:]</button>
+					<button type="button" id="ClearCustomizations">[:Customizations::ClearAll:]</button>
+				</div>
+				<ul class="field" id="CustomizationsField"></ul>
+			</form>
+		</div>
+	</section>
+	<section id="CSSRules">
+		<h2><a href="#CSSRules"><img src="/images/css.png" width="16" height="16" alt="[:CSSRules:]" title="[:CSSRules:]" /></a></h2>
+		<div class="content">
+			<form>
+				<div class="buttons">
+					<button type="button" id="SaveChangeCSSRules">[:CSSRules::SaveChange:]</button>
+					<button type="button" id="AddNewCSSRule">[:CSSRules::AddNew:]</button>
+					<button type="button" id="ClearCSSRule">[:CSSRules::ClearAll:]</button>
+				</div>
+				<ul class="field" id="CSSRulesField"></ul>
+			</form>
+		</div>
+	</section>
+	<section id="Keyboard">
+		<h2><a href="#Keyboard"><img src="/images/keyboard.png" width="16" height="16" alt="[:Keyboard:]" title="[:Keyboard:]" /></a></h2>
+		<div class="content">
+			<form>
+				<ul id="Shortcutkey">
+					<li class="button">
+						[:Keyboard::Button:]
+						<select name="keyCode"></select>
+						<label><input type="checkbox" name="altKey" />Alt</label>
+						<label><input type="checkbox" name="ctrlKey" />Ctrl</label>
+						<label><input type="checkbox" name="shiftKey" />Shift</label>
+					</li>
+					<li class="module">
+						[:Mode::module:]
+						<select name="keyCode"></select>
+						<label><input type="checkbox" name="altKey" />Alt</label>
+						<label><input type="checkbox" name="ctrlKey" />Ctrl</label>
+						<label><input type="checkbox" name="shiftKey" />Shift</label>
+					</li>
+					<li class="script">
+						[:Mode::script:]
+						<select name="keyCode"></select>
+						<label><input type="checkbox" name="altKey" />Alt</label>
+						<label><input type="checkbox" name="ctrlKey" />Ctrl</label>
+						<label><input type="checkbox" name="shiftKey" />Shift</label>
+					</li>
+					<li class="iframe">
+						[:Mode::iframe:]
+						<select name="keyCode"></select>
+						<label><input type="checkbox" name="altKey" />Alt</label>
+						<label><input type="checkbox" name="ctrlKey" />Ctrl</label>
+						<label><input type="checkbox" name="shiftKey" />Shift</label>
+					</li>
+					<li class="css">
+						[:Mode::css:]
+						<select name="keyCode"></select>
+						<label><input type="checkbox" name="altKey" />Alt</label>
+						<label><input type="checkbox" name="ctrlKey" />Ctrl</label>
+						<label><input type="checkbox" name="shiftKey" />Shift</label>
+					</li>
+					<li class="finish">
+						[:Mode::normal:]
+						<select name="keyCode"></select>
+						<label><input type="checkbox" name="altKey" />Alt</label>
+						<label><input type="checkbox" name="ctrlKey" />Ctrl</label>
+						<label><input type="checkbox" name="shiftKey" />Shift</label>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</section>
+	<section id="Tools">
+		<h2><a href="#Tools"><img src="/images/tools.png" width="16" height="16" alt="[:Tools:]" title="[:Tools:]" /></a></h2>
+		<div class="content">
+			<form>
+				<div class="buttons">
+					<button type="button" id="ExportPreferences">[:Preferences::Export:]</button>
+					<label><input type="file" id="ImportPreferences" /><span class="button">[:Preferences::Import:]</span></label>
+				</div>
+			</form>
+		</div>
+	</section>
+	<section id="Help">
+		<h2><a href="#Help"><img src="/images/help.png" width="16" height="16" alt="[:Help:]" title="[:Help:]" /></a></h2>
+		<div class="content">
+			<h3>[:Help::Contact:]</h3>
+			<!--<p class="description">I usually use Japanese, but please ask in English, then I'll also answer in English.</p>-->
+			<ul class="link">
+				<li><a href="https://twitter.com/intent/tweet?screen_name=whochan&hashtags=ContentBlockHelper">Twitter</a></li>
+				<!--<li><a href="https://www.facebook.com/whochancom">Facebook</a></li>-->
+			</ul>
+			<h3>[:Help::Informations:]</h3>
+			<ul class="link">
+				<li><a href="[:Help::Informations::About::URL:]" target="_blank">[:Help::Informations::About:]</a></li>
+				<li><a href="[:Help::Informations::ChangeLog::URL:]" target="_blank">[:Help::Informations::ChangeLog:]</a></li>
+			</ul>
+			<h3>[:Help::Downloads:]</h3>
+			<ul class="link">
+			<!--
+				<li><a href="https://addons.opera.com/extensions/details/contentblockhelper/">[:Help::Downloads::Opera:]</a></li>
+			-->
+				<li><a href="https://chrome.google.com/webstore/detail/contentblockhelper/ahnpejopbfnjicblkhclaaefhblgkfpd">[:Help::Downloads::Chrome:]</a></li>
+				<li><a href="https://addons.mozilla.org/ja/firefox/addon/contentblockhelper10/">[:Help::Downloads::Firefox:]</a></li>
+				<li><a href="https://far.whochan.com/file.cgi/folder/Extensions/ContentBlockHelper/">[:Help::Downloads::Development:]</a></li>
+			</ul>
+			<!--
+			<h3>[:Help::Translations:]</h3>
+			<p class="description">Please translate following files and send to <a href="mailto:extension-translate@whochan.com">me</a>.(This address receives the translated files, but does not accept questions.)</p>
+			<ul class="link">
+				<li><a href="configurations/lang.json" target="_blank">lang.json</a></li>
+				<li><a href="configurations/clientlang.json" target="_blank">clientlang.json</a></li>
+				<li><a href="description.txt" target="_blank">description.txt</a></li>
+			</ul>
+			-->
+			<h3>[:Help::Privacy:]</h3>
+			<p class="description">[:Help::Privacy::Policy:]</p>
+			<h3>[:Help::Licenses:]</h3>
+			<dl>
+				<dt>ContentBlockHelper</dt>
+				<dd>Copyright (C) 2010-2017 FAR/RAKUDA. All rights reserved.</dd>
+				<dt>Fugue Icons</dt>
+				<dd>Copyright (C) 2013 Yusuke Kamiyamane. All rights reserved.</dd>
+				<dd><a class="link" href="http://p.yusukekamiyamane.com/" title="http://p.yusukekamiyamane.com/">http://p.yusukekamiyamane.com/</a> </dd>
+				<dd>The icons are licensed under a Creative Commons Attribution 3.0 license.</dd>
+				<dd><a class="link" href="http://creativecommons.org/licenses/by/3.0/" title="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a> </dd>
+			</dl>
+		</div>
+	</section>
+	<section id="Donation">
+		<h2><a href="https://www.amazon.co.jp/registry/wishlist/2L2MRGTC133TV" target="_blank"><img src="images/donation.png" width="16" height="16" alt="[:Donation:]" title="[:Donation:]" /></a></h2>
+		<div class="content">
+			<a href="https://www.amazon.co.jp/registry/wishlist/2L2MRGTC133TV" target="_blank">[:Donation::Amazon:]</a>
+	<!--
+			<p>[:Donation::Please:]</p>
+			<form id="PayPalDonation" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+			<input type="hidden" name="cmd" value="_s-xclick" />
+			<input type="hidden" name="hosted_button_id" value="GRWM8F5P3E8L8" />
+			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+			<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1" />
+			</form>
+			<dl class="forJapanese">
+				<dt><a href="http://www.amazon.co.jp/registry/wishlist/2C7O2FMZ965AT/ref=cm_wl_rlist_go_v_C-2" target="_blank">[:Donation::Amazon:]</a></dt>
+				<dd>[:Donation::Amazon::Description:]</dd>
+				<dt><a href="https://vpcssl.lifecard.co.jp/giftcard/purchase/start.do" target="_blank">[:Donation::LifeCard:]</a></dt>
+				<dd>[:Donation::LifeCard::Description:]</dd>
+				<dt><a href="https://www.value-domain.com/payment.php?action=transfer" target="_blank">[:Donation::ValueDomain:]</a></dt>
+				<dd>[:Donation::ValueDomain::Description:]</dd>
+				<dt><a href="http://www.value-domain.com/regdom.php?ref=whochan" target="_blank">[:Donation::BuyDomain:]</a></dt>
+				<dd>[:Donation::BuyDomain::Description:]</dd>
+			</dl>
+			<div><iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=whochan-22&o=9&p=48&l=ur1&category=manga_anime&f=ifr" width="728" height="90" seamless="seamless"></iframe></div>
+	-->
+		</div>
+	</section>
+</div>
+<address>Copyright (C) 2010-2017 <a href="https://far.whochan.com/">[:ADDRESS::FAR:]</a>. All rights reserved. Translated by <a href="[:translator::url:]">[:translator:]</a>.</address>
+</body>
+</html>

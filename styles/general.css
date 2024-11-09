@@ -1,0 +1,220 @@
+html
+{
+	background:#000;
+	color:#eee;
+}
+body
+{
+	background:#000;
+	color:#eee;
+	display:none;
+	margin:0;
+	padding:0;
+	border:none;
+	line-height:1em;
+}
+address
+{
+	background:#fff;
+	color:#333;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+}
+div
+{
+	margin:0;
+	padding:0;
+	border:none;
+}
+p
+{
+	margin     :0;
+	padding    :0;
+}
+fieldset
+{
+	min-width:0;
+	overflow:auto;
+	clear:both;
+	margin:auto;
+	padding:4px;
+	border:1px solid #990;
+	background:#333;
+	color:white;
+	border-radius:4px;
+	font-size:medium;
+}
+legend
+{
+	text-shadow:0 0 2px #000;
+	line-height:1em;
+}
+/**/
+label
+{
+	display    : block;
+}
+label:hover
+{
+	background    : gray;
+	border-radius : 3px;
+}
+/* テキスト */
+input[type="text"],input[type="url"],input[type="number"],input[type^="date"]
+{
+	height        : 1.4em;
+	padding       : 0;
+	border        : 2px inset #cccccc;
+	border-radius : 4px;
+	background-image:linear-gradient(to bottom,#999999,transparent 40%,#ffffff);
+	background-color:#eeeeee;
+	vertical-align:top;
+}
+/* チェックボックス */
+input[type="checkbox"]
+{
+	height       : 14px;
+	width        : 14px;
+	padding      : 2px;
+	border       : 1px inset #333333;
+	border-radius: 3px;
+	margin       : 1px;
+	color        : #f60;
+	background   : rgba(0,0,0,0.25);
+	background-image:linear-gradient(to bottom,#666666,transparent 50%,#ffffff);
+	background-color:#cccccc;
+	box-shadow   : inset 1px 1px 0 rgba(0,0,0,0.3), inset -1px -1px 0 rgba(255,255,255,0.3);
+	vertical-align:top;
+}
+/* ラジオボタン */
+input[type="radio"]
+{
+	padding      : 3px;
+	border       : 1px solid black;
+	border-radius: 7px;
+	margin       : 1px;
+	color        : #ff0;
+	background   : rgba(0,0,0,0.25);
+	box-shadow   : inset 0 1px rgba(0,0,0,0.3), inset 0 5px rgba(0,0,0,0.2), inset 0 5px 20px rgba(0,0,0,0.25), inset 0 -7px 15px rgba(255,255,255,0.3);
+}
+input[type="range"]
+{
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	appearance:none;
+	height        : 16px;
+	margin:0;
+	background    : transparent;
+	border        : none;
+	vertical-align: top;
+}
+input[type="range"]::-webkit-slider-runnable-track
+{
+    height    : 4px;
+    background: #999;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    margin-top:0px;
+}
+input[type="range"]::-webkit-slider-thumb
+{
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	appearance:none;
+	width:14px;
+	height:14px;
+	margin-top:-6px;
+	border:solid 1px #999;
+	background:#ccc;
+	box-shadow   : inset 1px 3px 5px rgba(255,255,255,0.5), inset -1px -3px 5px rgba(0,0,0,0.7);
+	border-radius:50%;
+}
+input[type="range"]::-moz-range-thumb
+{
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	appearance:none;
+	width:14px;
+	height:14px;
+	margin-top:-6px;
+	border:solid 1px #999;
+	background:#ccc;
+	box-shadow   : inset 1px 3px 5px rgba(255,255,255,0.5), inset -1px -3px 5px rgba(0,0,0,0.7);
+	border-radius:50%;
+}
+button,span.button
+{
+	display      : inline-block;
+	box-sizing   : border-box;
+	-moz-box-sizing   : border-box;
+	font-size    : 12px;
+	font-family  : sans-serif;
+	text-shadow  : 0 0 2px black;
+	text-align   : center;
+	line-height  : 14px;
+	height       : 18px;
+	padding      : 1px 8px;
+	border       : 1px solid darkgreen;
+	border-radius: 4px;
+	color        : #fff;
+	box-shadow   : inset 1px 6px 12px #6cf, inset -1px -10px 5px #00c, 1px 2px 1px black;
+}
+button:hover,span.button:hover
+{
+	text-shadow  : 0 0 2px black;
+	border-radius: 4px;
+	color        : #fff;
+	box-shadow   : inset 1px 6px 12px #fc6, inset -1px -10px 5px #c00, 1px 2px 1px black;
+}
+input[type="file"]
+{
+	opacity    : 0;
+	background : transparent;
+	position   : absolute;
+	width      : 0;
+	height     : 0;
+	padding    : 0;
+	border     : 0;
+	margin     : 0;
+}
+input[type="color"]
+{
+	font-size     : 12px;
+	line-height   : 12px;
+	min-width     : 98px;
+	height        : 16px;
+	padding       : 0px;
+	border        : 1px inset #cccccc;
+	border-radius : 4px;
+	margin        : 0;
+}
+select:not([size])
+{
+	font-size     : 12px;
+	line-height   : 12px;
+	height        : 18px;
+	padding       : 0px;
+	border        : 1px inset #cccccc;
+	border-radius : 4px;
+	margin        : 0;
+	background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.1) 30%,transparent);
+	background-color:rgba(255, 255, 255, 1);
+	vertical-align:top;
+}
+option
+{
+	padding:0;
+}
+
+.advertisement
+{
+	border-width:0;
+	border-style:none;
+	display:block;
+	margin:auto;
+}
+
+html[lang="ja"] #PayPalDonation,html[lang="de"] #PayPalDonation { display:none; }
+html:not([lang="ja"]) .forJapanese { display:none; }

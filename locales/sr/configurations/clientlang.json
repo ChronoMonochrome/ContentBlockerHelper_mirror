@@ -1,0 +1,16 @@
+﻿{
+	"Confirm::addBlockRule"        : "Dodaj ovo pravilo za blokiranje?",
+	"Confirm::removeBlockRule"     : "Ukloni ovo pravilo za blokiranje?",
+	"Confirm::addAllowRule"        : "Dodaj ovo pravilo za dozvoljavanje?",
+	"Confirm::removeAllowRule"     : "Ukloni ovo pravilo za dozvoljavanje?",
+	"Confirm::AddCSSRule"          : "Dodaj ovo pravilo za CSS stilove?",
+	"Confirm::RemoveCSSRule"       : "Ukloni ovo pravilo za CSS stilove?",
+
+	"ApplyButton::AddRule"         : "Dodaj pravilo",
+	"ApplyButton::AddAllowRule"    : "Dodaj pravilo za dozvoljavanje",
+	"ApplyButton::RemoveBlockRule" : "Ukloni pravilo za blokiranje",
+	"ApplyButton::RemoveAllowRule" : "Ukloni pravilo za dozvoljavanje",
+	"ApplyButton::Disabled"        : "Onemogućeno",
+	"ApplyButton::AddCSSRule"      : "Dodaj pravilo za CSS stilove",
+	"ApplyButton::RemoveCSSRule"   : "Ukloni pravilo za CSS stilove"
+}

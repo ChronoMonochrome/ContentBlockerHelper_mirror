@@ -1,0 +1,18 @@
+{
+	"Confirm::addBlockRule"        : "Add this Blocking rule?",
+	"Confirm::removeBlockRule"     : "Remove this Blocking rule?",
+	"Confirm::addAllowRule"        : "Add this Allowing rule?",
+	"Confirm::removeAllowRule"     : "Remove this Allowing rule?",
+	"Confirm::AddCSSRule"          : "Add this CSS rule?",
+	"Confirm::RemoveCSSRule"       : "Remove this CSS rule?",
+
+	"ApplyButton::AddRule"         : "Add a rule",
+	"ApplyButton::AddAllowRule"    : "Add an Allowing rule",
+	"ApplyButton::RemoveBlockRule" : "Remove a Blocking rule",
+	"ApplyButton::RemoveAllowRule" : "Remove an Allowing rule",
+	"ApplyButton::Disabled"        : "Disabled",
+	"ApplyButton::AddCSSRule"      : "Add a CSS rule",
+	"ApplyButton::RemoveCSSRule"   : "Remove a CSS rule",
+
+	"eof":""
+}

@@ -1,0 +1,65 @@
+﻿İçerik engellemenize birçok farklı şekilde yardımcı olur.
+
+Bu eklenti içerik engelleme konusunda birçok farklı yolla size yardımcı olur.
+
+Opera'nın içerik engelleme özelliği oldukça kullanışlıdır fakat iframe ya da betikleri tıklayarak engelleyemez. Bu eklentiyi kurarsanız, tüm içerikleri kolayca tıklayarak engelleyebilirsiniz. Ve yine herhangi bir elementi CSS kuralı kullanarak engelleyebilirsiniz. Eğer elementleri manüel olarak engellemek istiyorsanız, belki bu eklenti NoAds ya da AdBlock eklentilerinden daha kullanışlı gelebilir size. Ve AdBlock Plus filterelerini de kullanabilirsiniz.
+
+= Özellikler
+
+* Abone olunan filtreler ile içerikleri engelleme.
+* Opera Eklenti API'si yardımı ile url filtrelerine geçici kurallar ekleme.
+* Opera'nın güçlendirilmiş standart İçerik Engelleme Modu.
+* Geçici kuralları Opera Link'e kaydetme.
+* CSS yardımı ile HTML elementlerini engelleme.
+* Betik öncesi durum yardımı ile harici betiklerin otomatik olarak engellenmesi.
+
+= Kullanımı
+
+== Ayarlar
+
+Tercihler sayfasından Abonelikleri ve Otomatik Engellemeyi aktifleştirin.
+
+== Başlangıç
+
+# ContentBlockHelper eklentisinin düğmesine basın.
+# Engellemek istediğiniz içeriğe ait seçeneği işaretleyin.
+
+== Geçici Engelleme Modu
+
+Eğer içerikleri adım adım engellemek istiyorsanız bu yöntemi kullanın. Fakat bu yöntemle kaydettiğiniz kurallar, eklenti devre dışı bırakıldığında çalışmayacaktır.
+
+# Engellemek istediğiniz renkteki -mavi (iframe) ya da kırmızı (betik)-  elementi tıklayın.
+# Açılan listeden bir kural seçin ve tıklayın.
+
+== Kalıcı Engelleme Modu
+
+Eğer içeriği kalıcı oalrak engellemek ve eşleştirmek istiyorsanız bu modu kullanın. Bu modda kaydettiğiniz kurallar eklenti devre dışı bırakılmış olsa bile çalışacaktır.
+
+# Opera's standart içerik engelleme modunu açın.
+# Engellemek istediğiniz renkteki -mavi (iframe) ya da kırmızı (betik)-  elementi tıklayın.
+# "Uygula" düğmesine tıklayın.
+
+== CSS Engelleme Modu
+
+Bu modda gizlenmiş HTML elementleri engellenemez.
+
+# Herhangi bir elemente tıklayın.
+# Açılır pencereden bir kural seçin ve tıklayın.
+
+== Son
+
+# ContentBlockHelper eklenti düğmesine tıklayın.
+# "Uygula" düğmesini/seçeneğini tıkalyın.
+# Eğer kural uygulanmdıysa sayfayı yeniden yükleyin.
+
+== Kayıt
+
+Tercihler sayfasından, geçici uyguladığınız kurallarınızı Opera'Link'e kaydedebilirsiniz. Kaydedilen kurallar geçici listeden silinir.
+
+= Lisanlar
+ 
+Fugue Icons:
+Copyright (C) 2010 Yusuke Kamiyamane. Tüm hakları saklıdır.
+&lt;http://p.yusukekamiyamane.com/&gt;
+Simgeler Creative Commons Attribution 3.0 lisansı ile koruma altına alınmıştır. 
+&lt;http://creativecommons.org/licenses/by/3.0/&gt;

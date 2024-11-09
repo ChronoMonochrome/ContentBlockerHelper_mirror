@@ -1,0 +1,51 @@
+Content Helper Vous aide à bloquer des publicités qui vous trace sur n'importe quels sites, Content Helper bloque n'importe quel contenu ennuyeux avec des méthodes faciles.
+
+Cette extension vous aidera à bloquer des publicités n'importe ou et sur n'importe quel site et bloquera les contenus ennuyeux avec des méthodes faciles.
+
+= Fonctionnement
+
+* Bloquer les publicités grâce à des filtres souscrits.
+* Ajoute un règlement à la pub en cliquant sur les éléments automatiquement que vous désirez bloquer.
+* Les éléments selon les règles de sélecteur CSS seront cachés.
+* Interdiction d'exécuter les scénarios de la page. (Hors service)
+
+=Utilisation
+
+== Publicités de bloc par abonnements
+
+Allumez les abonnements voulus dans la Liste de filtres Souscrits et cliquer sur "Commencer à souscrire".
+
+== Ajouter des règles(autorités) de blocage
+
+# Choisir ContentBlockHelper du menu de contexte à la page.
+# Choisir le type de contenu que vous voulez bloquer.
+# Cliquer sur un élément que vous voulez bloquer.
+# Choisir une règle pour faire glisser la barre sur le sélecteur.
+# Choisir la commande "Appliquent toutes les règles de blocage" du menu de contexte.
+# Recharger la page, si des règles supplémentaires n'ont pas été appliquées.
+
+== Interdire les scénarios de s'éxecuter
+
+Cette fonction est mise hors de service en défaut. Vous pouvez le permettre sur un onglet de Comportement.
+
+; Permet d'exécuter des scénarios.
+; Scénarios tiers : les Scénarios de domaine intégré et même et le domaine sous sont exécutés.
+; Scénarios externes : les Scénarios de damain intégré et même sont exécutés.
+; Tous les scénarios : Interdit exécutent tous les scénarios de la page. Si vous voulez les exécuter dans la certaine page, ajoutez un modèle URL de la page à la liste permise.
+
+Vous pouvez connaître les scénarios et voir si le niveau d'origine est ouvert par la couleur d'insigne du bouton d'extension.
+
+; Violet : N'importe quels scénarios ne fonctionnent pas.
+; Bleu : des scénarios intégrés fonctionnent.
+; Vert : les Scénarios de même hôte fonctionnent.
+; Jaune : les Scénarios de non le même hôte mais le même domaine fonctionnent.
+; Rouge : les Scénarios de tiers fonctionnent.
+
+= Extensions Semblables
+
+* AdBlock
+* AdBlock Plus
+* AdBlock Pro
+* NoAds Advanced
+* NotScripts
+* External Scripts

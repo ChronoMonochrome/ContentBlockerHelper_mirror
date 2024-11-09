@@ -1,0 +1,71 @@
+{
+	"LanguageFileDoNotEdit"              : "このファイルはエクステンションの言語ファイルです。",
+
+	"lang"                               : "de",
+	"translator"                         : "Unrealmirakulix",
+	"translator::url"                    : "http://www.unrealmirakulix.de/",
+
+	"disabled"                           : "ContentBlockHelper ist deaktiviert. Laden Sie die Seite neu.",
+
+	"Preferences"                        : "Einstellungen",
+
+	"General"                            : "General",
+	"General::SubscribeInterval"         : "Updateintervall anpassen  (in Tagen) : ",
+
+	"SimpleFilter"                       : "Simple Rules",
+	"SimpleFilter::script"               : "Verhindere ausführende Skripte auf dieser Seite.",
+	"SimpleFilter::script::allow"        : "Aus",
+	"SimpleFilter::script::block"        : "Alle Scripts",
+
+	"Subscriptions"                      : "Aboliste",
+	"Subscriptions::SaveChange"          : "Abonnieren",
+	"Subscriptions::AddNew"              : "Hinzufügen",
+	"Subscriptions::delete"              : "Entfernen",
+
+	"Customizations"                     : "Temporäre Liste",
+	"Customizations::SaveChange"         : "Änderungen speichern",
+
+	"CSSRules"                           : "CSS-Regeln",
+	"CSSRules::SaveChange"               : "Änderungen speichern",
+	"CSSRules::AddNew"                   : "Hinzufügen",
+	"CSSRules::ClearAll"                 : "Alles löschen",
+	"CSSRules::delete"                   : "Eintrag löschen.",
+
+	"Keyboard"                           : "Tastaturkürzel",
+	"Keyboard::Button"                   : "Toolbar-Button de-/aktivieren",
+
+	"Tools"                              : "Werkzeuge",
+	"Tools::OAuth"                       : "OAuth",
+	"Tools::OAuth::description"          : "Die Opera Link API nutzt OAuth. Das Passwort des Accounts wird nur an einen Authentifizierungs-Server gesendet, daher die Erweiterung es nie erhalten.",
+	"Tools::OAuth::ClearToken"           : "Lösche den Zugangstoken von OAuth.",
+
+	"Help"                               : "Hilfe",
+	"Help::Forum"                        : "Forum",
+	"Help::Forum::Questions"             : "Fragen und Tutorials",
+	"Help::Forum::Requests"              : "Anfragen und Ideen",
+	"Help::Forum::Report"                : "Problem melden",
+	"Help::Forum::Translations"          : "Übersetzungen",
+	"Help::Downloads::Development"       : "Download der Entwicklerversionen",
+
+	"ADDRESS::FAR"                       : "FAR/RAKUDA",
+	"ADDRESS::Support"                   : "Support-Seite",
+
+	"Mode"                               : "Blockiermodus",
+	"Mode::module"                       : "Klicken Sie bei den SCRIPTs in in den HEAD um sie zu den URL-Filtern hinzuzufügen.",
+	"Mode::script"                       : "Klicken Sie bei den SCRIPTs in den BODY um sie zu den URL-Filtern hinzuzufügen",
+	"Mode::iframe"                       : "Klicken Sie auf IFRAMEs / EMBEDs / IMGs um sie zu den URL-Filtern hinzuzufügen.",
+	"Mode::css"                          : "Klicken Sie auf Elemente der Seite um CSS selectors als Regeln hinzuzufügen. Dies verbirgt Selbige.",
+	"Mode::normal"                       : "Alle Blockierregeln anwenden.",
+
+	"Contents"                           : "Externe Inhalte",
+	"Contents::Allowed"                  : "Erlaubt",
+	"Contents::Blocked"                  : "Blockiert",
+	"Contents::Blocked::Subscribed"      : "Blockiert durch die Aboliste",
+	"Contents::Blocked::Permanent"       : "Blockiert durch die permanente Liste",
+	"Contents::Blocked::Customized"      : "Blockiert durch die temporäre Liste",
+	"Contents::Blocked::Auto"            : "Das Laden ist fehlgeschlagen oder die Ausführung wurde untersagt.",
+	"Contents::Loaded"                   : "Geladen",
+	"Contents::Failed"                   : "Ladefehler",
+
+	"eof":""
+}

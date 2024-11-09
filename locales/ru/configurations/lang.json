@@ -1,0 +1,85 @@
+{
+	"LanguageFileDoNotEdit"              : "このファイルはエクステンションの言語ファイルです。",
+
+	"lang"                               : "ru",
+	"translator"                         : "inDigazzZ",
+	"translator::url"                    : "http://my.opera.com/AnuarSh/",
+
+	"disabled"                           : "ContentBlockHelper не активен. Обновите страницу.",
+
+	"Preferences"                        : "Настройки",
+
+	"General"                            : "Управление",
+	"General::SubscribeInterval"         : "Интервал обновления подписок (в днях) : ",
+
+	"SimpleFilter"                       : "Simple Rules",
+	"SimpleFilter::script"               : "Автоматическое блокирование скриптов",
+	"SimpleFilter::script::allow"        : "Отключено",
+	"SimpleFilter::script::block"        : "Всех скриптов",
+
+	"Subscriptions"                      : "Подписки",
+	"Subscriptions::SaveChange"          : "Подписаться",
+	"Subscriptions::AddNew"              : "Добавить",
+	"Subscriptions::delete"              : "Удалить",
+
+	"Customizations"                     : "Временный список блокирования",
+	"Customizations::SaveChange"         : "Сохранить изменения",
+
+	"CSSRules"                           : "CSS правила",
+	"CSSRules::SaveChange"               : "Сохранить изменения",
+	"CSSRules::AddNew"                   : "Добавить новое правило",
+	"CSSRules::ClearAll"                 : "Очистить всё",
+	"CSSRules::delete"                   : "Удалить правило",
+
+	"Keyboard"                           : "Горячие клавиши",
+	"Keyboard::Button"                   : "Показ кнопки расширения на панели браузера",
+
+	"Tools"                              : "Инструменты",
+	"Tools::OAuth"                       : "OAuth",
+	"Tools::OAuth::description"          : "Opera Link API использует протокол OAuth. Пароль от аккаунта MyOpera отправляется только на сервер аутентификации, расширение не получает доступ к нему.",
+	"Tools::OAuth::ClearToken"           : "Удалить все маркеры доступа OAuth.",
+
+	"Help"                               : "Помощь",
+	"Help::Forum"                        : "Форум",
+	"Help::Forum::Questions"             : "Вопросы и ответы",
+	"Help::Forum::Requests"              : "Запросы и идеи",
+	"Help::Forum::Report"                : "Сообщить об ошибке",
+	"Help::Forum::Translations"          : "Переводы",
+	"Help::Downloads::Development"       : "Тестовые версии",
+
+	"Donation"                           : "Пожертвование",
+	"Donation::Amazon"                   : "Amazon.co.jp",
+	"Donation::Amazon::Description"      : "Please give a gift from Amazon.co.jp.",
+	"Donation::LifeCard"                 : "V-Prica",
+	"Donation::LifeCard::Description"    : "Подарите мне пожалуйста подарок V-Preca. Получатель - \"name:ＷＨＯＣＨＡＮ,mail:donation@whochan.com\".",
+	"Donation::ValueDomain"              : "Value-Domain",
+	"Donation::ValueDomain::Description" : "Поделитесь со мной частью оплаты за услуги Value-domain. Получатель - \"whochan\".",
+	"Donation::BuyDomain"                : "Купить домен",
+	"Donation::BuyDomain::Description"   : "Я получу 100 йен за каждую купленную Вами услугу у Value-Domain.",
+
+	"ADDRESS::FAR"                       : "FAR/RAKUDA",
+	"ADDRESS::Support"                   : "Страница поддержки",
+
+	"Mode"                               : "Режим блокирования",
+	"Mode::Disable"                      : "Приостановить блокирование.",
+	"Mode::linkedcontents"               : "Включить Мульти-режим (скрипты и IFRAME).",
+	"Mode::module"                       : "Обновить правила для скриптов в заголовке страницы.",
+	"Mode::script"                       : "Обновить правила для скриптов в теле страницы.",
+	"Mode::iframe"                       : "Обновить правила для встроенных объектов.",
+	"Mode::css"                          : "Обновить CSS правил.",
+	"Mode::normal"                       : "Применить правила",
+
+	"Contents"                           : "Содержимое сторонних ресурсов",
+	"Contents::Allowed"                  : "Разрешено",
+	"Contents::Allowed::Subscribed"      : "Разрешено правилами из подписок",
+	"Contents::Allowed::Customized"      : "Разрешено правилом из настраиваемого списка блокирования ",
+	"Contents::Blocked"                  : "Заблокировано правилом",
+	"Contents::Blocked::Subscribed"      : "Заблокировано правилом из подписок",
+	"Contents::Blocked::Permanent"       : "Заблокировано правилом из списка блокируемого содержимого",
+	"Contents::Blocked::Customized"      : "Заблокировано правилом из временного списка блокирования",
+	"Contents::Blocked::Auto"            : "Ошибка при загрузке / Выполнение запрещено",
+	"Contents::Loaded"                   : "Загружено",
+	"Contents::Failed"                   : "Ошибка загрузки",
+
+	"eof":""
+}
