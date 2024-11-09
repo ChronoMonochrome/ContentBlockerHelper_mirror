@@ -9,6 +9,48 @@
 /****************************************************************************************************/
 
 var WHO = WHO || {};
+/* WHO.extension = WHO.extension || {};
+
+			WHO.extension.sendRequest = function(type,message,callback)
+			{
+
+				var _port = chrome.runtime.connect({name:"request"});
+
+				if(callback)
+				{
+
+					var _listener = function(data)
+					{
+					//	console.log(data);
+						callback(data);
+						_port.onMessage.removeListener(_listener);
+						_port.disconnect();
+						_port = undefined;
+					};
+					_port.onMessage.addListener(_listener);
+					window.setTimeout(function()
+					{
+						if(_port)
+						{
+						//	console.info("response does not return",type,message);
+						//	callback();
+							_port.onMessage.removeListener(_listener);
+							_port.disconnect();
+							_port = undefined;
+						}
+					},2000);
+
+				}
+
+				_port.postMessage({type:type,message:message});
+
+				if(!callback)
+				{
+					_port.disconnect();
+					_port = undefined;
+				}
+
+			}; */
 
 	/**************************************************************************************/
 

@@ -18,7 +18,7 @@
       "run_at": "document_start"
    }, {
       "all_frames": false,
-      "js": [ "lib/WHO.URL.js", "includes/cbhElementRemover.js", "includes/cbhFilterMaker.js", "includes/usoContentBlockHelper.js" ],
+      "js": ["lib/WHO.URL.js", "includes/cbhElementRemover.js", "includes/cbhFilterMaker.js", "includes/usoContentBlockHelper.js" ],
       "match_about_blank": false,
       "matches": [ "http://*/*", "https://*/*" ],
       "run_at": "document_start"
@@ -46,7 +46,6 @@
       "48": "icons/icon48.png",
       "64": "icons/icon64.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjUajhwxP0AkMa7xqaA8J/MEZLD7cfn3aFj/taopbYKJItawL5iTBDE+1LtTwS7Ssbn06eaossVtkOLQ8srjW6qSmw0M5yTzo2HjaLRAliKj983tM9oGkFcdpApwpftZxZiifk0wVmR4g8FeKhei2cSEgq27V7tSdJxiIrzuRvCQIDAQAB",
    "manifest_version": 2,
    "minimum_chrome_version": "80.0",
    "name": "ContentBlockHelper",
