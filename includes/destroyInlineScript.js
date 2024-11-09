@@ -110,16 +110,20 @@ function removeScript(element)
 
 		/* src の無い script を削除 */
 
-		if(element.localName === "script" && !element.src)
-		{
+		if (element.localName === "script" && !element.src) {
+			// Only proceed if the element is still part of the document
+			if (element.parentNode) {
+				// Create a new script element
+				const newElement = document.createElement('script');
+				newElement.setAttribute('data-cbh-blocked', "blocked");
 
-		//	console.info("An Inline script is Destroyed",window.location.href,element);
-
-			newElement = document.createElement('script');
-			newElement.setAttribute('data-cbh-blocked',"blocked");
-			element.parentNode.insertBefore(newElement,element);
-			element.parentNode.removeChild(element);
-
+				// Insert the new script before the current one
+				element.parentNode.insertBefore(newElement, element);
+				// Remove the current inline script
+				element.parentNode.removeChild(element);
+			} else {
+				console.warn("The script element's parent node is null. It may have already been removed.");
+			}
 		}
 
 	}
